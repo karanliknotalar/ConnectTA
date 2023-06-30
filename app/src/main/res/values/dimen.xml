@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="resimWidth">55dp</dimen>
+    <dimen name="resimHeight">80dp</dimen>
+    <dimen name="topbarsHeight">50dp</dimen>
+    <dimen name="topbarsTextSize">18sp</dimen>
+</resources>

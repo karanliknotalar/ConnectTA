@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_login"
+        android:title="Giriş Yap"
+        android:icon="@drawable/ic_login"/>
+
+    <item android:id="@+id/menu_film"
+        android:title="FilmLer"
+        android:icon="@drawable/ic_movie"/>
+
+    <item android:id="@+id/menu_dizi"
+        android:title="Diziler"
+        android:icon="@drawable/ic_movie"/>
+</menu>

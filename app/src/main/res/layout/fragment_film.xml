@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FilmFragment"
+    android:background="@color/colorTwo">
+
+    <include
+        android:id="@+id/film_fragment_topBar"
+        layout="@layout/fragment_film_topbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/film_fragment_topBar"
+        android:id="@+id/film_fragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" />
+</RelativeLayout>

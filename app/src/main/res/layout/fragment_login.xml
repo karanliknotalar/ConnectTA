@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LoginFragment"
+    android:background="@color/colorTwo">
+
+    <include
+        android:id="@+id/dizi_fragment_topBar"
+        layout="@layout/fragment_login_topbar" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linear_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/login_fragment_usernameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_bg"
+                android:gravity="center"
+                android:hint="Kullanıcı Adı..."
+                android:padding="5dp"
+                android:textColor="@color/purple_700" />
+
+            <EditText
+                android:id="@+id/login_fragment_passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/linear_bg"
+                android:gravity="center"
+                android:hint="Şifre...."
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/purple_700" />
+
+            <CheckBox
+                android:id="@+id/login_fragment_checkSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:minHeight="0dp"
+                android:textColor="@color/colorOne"
+                android:buttonTint="@color/colorOne"
+                android:text="Bilgileri Kaydet" />
+
+        </LinearLayout>
+
+     <!--   <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/linear_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Index Url" />
+
+            <EditText
+                android:id="@+id/login_fragment_urlText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="https://turkcealtyazi.org"
+                android:text="https://turkcealtyazi.org"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:enabled="false"/>
+
+        </LinearLayout>
+-->
+        <Button
+            android:id="@+id/login_fragment_btnGiris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Giriş Yap"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_fragment_resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="waiting..."
+            android:background="@drawable/linear_bg"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

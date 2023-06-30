@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolTopbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbarsHeight"
+    android:background="@color/colorOne"
+    android:elevation="5dp">
+
+    <TextView
+        android:id="@+id/fragment_login_topbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GİRİŞ YAP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/topbarsTextSize"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.Toolbar>

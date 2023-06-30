@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolTopbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topbarsHeight"
+    android:background="@color/colorOne"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragment_film_topbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Film Listesi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/topbarsTextSize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fragment_film_topbar_searchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toStartOf="@id/fragment_film_topbar_btnSave"
+            android:layout_toEndOf="@id/fragment_film_topbar_text"
+            android:background="@drawable/search_box_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:hint="Ara.."
+            android:padding="6dp" />
+
+        <ImageView
+            android:id="@+id/fragment_film_topbar_btnSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_save" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
