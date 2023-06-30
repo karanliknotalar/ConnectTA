@@ -51,14 +51,11 @@ public class ConnectTA {
 
     public Boolean loginTA() throws IOException {
         handler = new Handler(getMainLooper());
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                pDialog = new ProgressDialog(context);
-                pDialog.setCancelable(false);
-                pDialog.setMessage("Giriş yapılıyor");
-                pDialog.show();
-            }
+        handler.post(() -> {
+            pDialog = new ProgressDialog(context);
+            pDialog.setCancelable(false);
+            pDialog.setMessage("Giriş yapılıyor");
+            pDialog.show();
         });
 
         try {
@@ -82,7 +79,7 @@ public class ConnectTA {
                     .build();
 
             Request request = new Request.Builder()
-                    .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0")
+                    .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0")
                     .url(url)
                     .post(requestBody)
                     .build();
